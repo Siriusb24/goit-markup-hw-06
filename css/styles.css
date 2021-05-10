@@ -625,6 +625,15 @@ li {
     cursor: pointer;
 }
 
+.anketa {
+    display: block;
+    padding-top: 75px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 448px;
+    height: 342px;
+}
+
 /*портфоліо стилізація*/
 .our-works {
     padding-top: 94px;
