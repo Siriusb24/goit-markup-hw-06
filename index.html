@@ -682,26 +682,56 @@
                     </svg>
                 </button>
                 <form>
-                    <h3>Оставьте свои данные, мы вам перезвоним</h3>
-                    <div class="anketa">
-                        <label for="user_name">Имя</label>
-                        <input type="text" name="user_name" id="user_name" />
-                        <label for="phone_namber">Телефон</label>
+                    <h3 class="modal_title">
+                        Оставьте свои данные, мы вам перезвоним
+                    </h3>
+                    <div role="group" class="anketa">
+                        <label for="user_name" class="anketa_title">Имя</label>
+                        <input
+                            type="text"
+                            name="user_name"
+                            id="user_name"
+                            class="user"
+                        />
+                        <label for="phone_namber" class="anketa_title"
+                            >Телефон</label
+                        >
                         <input
                             type="tel"
                             name="phone_namber"
                             id="phone_namber"
+                            class="user_phone"
                         />
-                        <label for="email">Почта</label>
-                        <input type="email" name="email" id="email" />
-                        <label for="feedback">Комментарий</label>
+                        <label for="email" class="anketa_title">Почта</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            class="user_mail"
+                        />
+                        <label for="feedback" class="anketa_title"
+                            >Комментарий</label
+                        >
                         <input
                             type="textarea"
                             name="feedback"
                             id="feedback"
                             resize="none"
+                            placeholder="Введите текст"
+                            class="coments"
                         />
+                        <input
+                            type="checkbox"
+                            name="licence"
+                            value="licence"
+                            id="licence"
+                        />
+                        <label for="licence"
+                            >Соглашаюсь с рассылкой и принимаю
+                            <a href="">Условия договора</a></label
+                        >
                     </div>
+                    <button type="submit">Отправить</button>
                 </form>
             </div>
         </div>
