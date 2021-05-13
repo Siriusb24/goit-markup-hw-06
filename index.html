@@ -672,6 +672,27 @@
                         </li>
                     </ul>
                 </div>
+                    <form class="footer-form">
+                         <label for="footer_email"
+                            ><h3 class="mailing-title">Подпишитесь на рассылку</h3></label
+                        >
+                        <div class="mailing-conteiner">
+                        <input
+                            type="email"
+                            name="footer_email"
+                            id="footer_email"
+                            placeholder="E-mail"
+                            required
+                            class="footer-mail"
+                        />
+                        <button type="submit" class="footer-button">Подписаться<svg class="send-icon">
+                                    <use
+                                        href="./images/icons.svg#icon-send"
+                                    ></use>
+                                </svg></button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </footer>
         <div class="backdrop is-hidden" data-modal>
@@ -681,57 +702,92 @@
                         <use href="./images/icons.svg#icon-close"></use>
                     </svg>
                 </button>
-                <form>
+                <form class="modal-form">
                     <h3 class="modal_title">
                         Оставьте свои данные, мы вам перезвоним
                     </h3>
                     <div role="group" class="anketa">
                         <label for="user_name" class="anketa_title">Имя</label>
-                        <input
-                            type="text"
-                            name="user_name"
-                            id="user_name"
-                            class="user"
-                        />
+                        <div class="form-conteiner">
+                            <input
+                                type="text"
+                                name="user_name"
+                                id="user_name"
+                                required
+                                pattern="^[a-zA-Z]+$"
+                                class="anketa_item"
+                            />
+                            <span
+                                ><svg class="anketa-icon">
+                                    <use
+                                        href="./images/icons.svg#icon-person"
+                                    ></use>
+                                </svg>
+                            </span>
+                        </div>
                         <label for="phone_namber" class="anketa_title"
                             >Телефон</label
                         >
-                        <input
-                            type="tel"
-                            name="phone_namber"
-                            id="phone_namber"
-                            class="user_phone"
-                        />
+                        <div class="form-conteiner">
+                            <input
+                                type="tel"
+                                name="phone_namber"
+                                id="phone_namber"
+                                required
+                                pattern="[0-9]{6,13}"
+                                class="anketa_item"
+                            />
+                            <span
+                                ><svg class="anketa-icon">
+                                    <use
+                                        href="./images/icons.svg#icon-phone"
+                                    ></use>
+                                </svg>
+                            </span>
+                        </div>
                         <label for="email" class="anketa_title">Почта</label>
-                        <input
-                            type="email"
-                            name="email"
-                            id="email"
-                            class="user_mail"
-                        />
+                        <div class="form-conteiner">
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                required
+                                class="anketa_item"
+                            />
+                            <span
+                                ><svg class="anketa-icon">
+                                    <use
+                                        href="./images/icons.svg#icon-email"
+                                    ></use>
+                                </svg>
+                            </span>
+                        </div>
                         <label for="feedback" class="anketa_title"
                             >Комментарий</label
                         >
-                        <input
-                            type="textarea"
-                            name="feedback"
-                            id="feedback"
-                            resize="none"
-                            placeholder="Введите текст"
-                            class="coments"
-                        />
-                        <input
-                            type="checkbox"
-                            name="licence"
-                            value="licence"
-                            id="licence"
-                        />
-                        <label for="licence"
-                            >Соглашаюсь с рассылкой и принимаю
-                            <a href="">Условия договора</a></label
-                        >
+                        <div class="form-conteiner">
+                            <textarea
+                                name="feedback"
+                                id="feedback"
+                                placeholder="Введите текст"
+                                class="coments"
+                            ></textarea>
+                        </div>
+                        <div class="licence">
+                            <input
+                                type="checkbox"
+                                name="licence"
+                                value="licence"
+                                id="licence"
+                                class="checkbox is-hidden"
+                            />
+                            <label for="licence" class="checkbox-icon"
+                                >Соглашаюсь с рассылкой и принимаю
+                                <a href="#" class="licence-link">Условия договора</a></label
+                            >
+                        </div>
                     </div>
-                    <button type="submit">Отправить</button>
+                    <button type="submit" class="send_button">Отправить</button>
                 </form>
             </div>
         </div>
