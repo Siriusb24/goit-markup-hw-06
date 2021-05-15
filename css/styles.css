@@ -670,7 +670,8 @@ li {
 
 .modal {
     position: absolute;
-    min-width: 528px;
+    padding: 40px;
+    width: 528px;
     min-height: 581px;
     left: 50%;
     top: 50%;
@@ -698,19 +699,18 @@ li {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-exit:hover .close-button {
+.modal-exit:hover .close-button,
+.modal-exit:focus .close-button {
     fill: var(--accent-color);
 }
 
 .modal-form {
-    min-width: 528px;
-    min-height: 581px;
+    width: 100%;
 }
 
 .modal_title {
     margin: 0;
     margin-bottom: 12px;
-    padding: 40px 40px 0px;
 
     font-weight: 700;
     font-size: 20px;
@@ -723,7 +723,6 @@ li {
 
 .anketa {
     display: block;
-    margin: auto;
     width: 448px;
     height: 342px;
 }
@@ -732,6 +731,10 @@ li {
     display: block;
     position: relative;
     margin-bottom: 10px;
+}
+
+.feedback {
+    margin-bottom: 20px;
 }
 
 .form-conteiner:focus-within .anketa_item,
@@ -812,6 +815,10 @@ li {
     color: var(--accent-color);
 }
 
+.licence:focus-within {
+    color: var(--accent-color);
+}
+
 .checkbox:checked + .checkbox-icon::before {
     border: none;
     background-color: var(--accent-color);
@@ -821,10 +828,9 @@ li {
 }
 
 .send_button {
-    position: absolute;
-    left: 50%;
-    bottom: 40px;
-    transform: translate(-50%);
+    display: block;
+    margin: auto;
+    margin-top: 74px;
     width: 200px;
     height: 50px;
     font-weight: 700;
