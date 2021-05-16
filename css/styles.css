@@ -817,8 +817,8 @@ li {
     color: var(--accent-color);
 }
 
-.licence:focus-within {
-    color: var(--accent-color);
+.licence:focus-within .checkbox-icon::before{
+    border-color: var(--accent-color);
 }
 
 .checkbox:checked + .checkbox-icon::before {
